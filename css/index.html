@@ -5,73 +5,90 @@
   <title>Document</title>
   <link rel="stylesheet" href="dist.css">
 </head>
-<body>
+<body class="bg-green-800">
 
-  <div class="text-green-600">
-    <div>
-      <nav>
-        <div>
-          <h1>
-            <a href="/" class="font-light p-4">Food Ninja</a>
-          </h1>
-        </div>
-        <ul>
-          <li>
-            <a href="#">
-              <span class="font-bold">Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span>About</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span>Contact</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  
-    <main>
-      <div>
-        <a href="#">Log in</a>
-        <a href="#">Sign up</a>
-      </div>
+<!-- header ==============================  -->
+<div class=" p-4 flex justify-between items-center">
 
-      <header>
-        <h2>Recipes</h2>
-        <h3>For Ninjas</h3>
-      </header>
-
-      <div>
-        <h4>Latest Recipes</h4>
-  
-        <div>
-          <!-- cards go here -->
-          <div> 
-            <img src="img/stew.jpg" alt="stew">
-            <div>
-              <span>5 Bean Chili Stew</span>
-              <span>Recipe by Mario</span>
-            </div>
-          </div>
-        </div>
-
-        <h4 class="text-2xl text-red-600">Most Popular</h4>
-
-        <div>
-          <!-- cards go here -->
-        </div>
-      </div>
-
-      <div>
-        <div>Load more</div>
-      </div>    
-    </main>
+  <!--   left side -->
+  <div class="flex items-center">
+    <img src="https://cdn2.iconfinder.com/data/icons/bitsies/128/Food-256.png" width="50" alt="Logo" class="mr-2">
+    <a href="#" class="inline-block p-2 text-indigo-200 hover:text-indigo-100 mr-2">Home</a>
+    <a href="#" class="inline-block p-2 text-indigo-200 hover:text-indigo-100">About</a>
+    <a href="#" class="inline-block p-2 text-indigo-200 hover:text-indigo-100">Contact Us</a>
   </div>
+
+  <!--   right side -->
+  <div class="hidden md:block">
+    
+    <a href="#" class="inline-block py-2 px-4 text-yellow-700 bg-yellow-400 hover:bg-yellow-300 hover:text-yellow-800 rounded transition ease-in duration-150">Log in</a>
+    <a href="#" class="inline-block py-2 px-4 text-yellow-700 bg-yellow-400 hover:bg-yellow-300 hover:text-yellow-800 rounded transition ease-in duration-150">Sign Up</a>
+  </div>
+
+</div>
+
+<!-- hero ============================== -->
+<div class="md:flex justify-between py-20 px-10 bg-green-700 text-indigo-100">
+
+  <!--   left -->
+  <div class="md:w-1/2 mb-10 md:mb-0">
+    <h2 class="text-2xl md:text-4xl lg:text-6xl text-white mb-6">Welcome to Foodie City!</h2>
+    <p class="mb-6">Enjoy your best day here!</p>
+
+    <a href="#" class="inline-block py-3 px-6 text-lg bg-gray-400 text-gray-800 hover:bg-gray-300 rounded mr-2">Learn More</a>
+    <a href="#" class="inline-block py-3 px-6 text-lg bg-orange-400 text-orange-800 hover:bg-orange-300 rounded">Get Started</a>
+  </div>
+
+  <!--   right -->
+  <div class="md:w-1/2">
+    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="Happiest Doggo" class="w-full rounded shadow-2xl">
+  </div>
+
+</div>
+
+<!-- features ============================== -->
+<div class="md:flex py-16 px-10 bg-green-800 text-indigo-200 tex
+            t-center">
+  <div class="mr-2 text-center">
+    <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=333&q=80" class="w-full mb-4 rounded border-solid border-2 border-indigo-400">
+    <p>Meatballs!</p>
+  </div>
+
+  <div class="mr-2 mt-8 text-center">
+    <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" class="w-full mb-4 rounded border-solid border-2 border-indigo-400">
+    <p>Red Curry!</p>
+  </div>
+
+  <div class="mr-2 text-center">
+    <img src="https://images.unsplash.com/photo-1497888329096-51c27beff665?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=751&q=80" class="w-full mb-4 rounded border-solid border-2 border-indigo-400">
+    <p>Brunching with Friends!</p>
+  </div>
+
+  <div class="mr-2 mt-8 text-center">
+    <img src="https://images.unsplash.com/photo-1485962398705-ef6a13c41e8f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80" class="w-full mb-4 rounded border-solid border-2 border-indigo-400">
+    <p>Dinner!</p>
+  </div>
+</div>
+
+<!-- footer + newsletter ============================== -->
+<div class="p-10 bg-green-900 text-green-400 flex justify-between">
+
+  <!--   left -->
+  <div class="md:w-1/2">
+
+    <h3 class="text-lg mb-2">Join if you want </h3>
+    <form class="flex">
+      <input type="email" class="w-full rounded-l py-3 px-4 outline-none focus:bg-white-200">
+      <button class="bg-red-300 hover:bg-red-400 text-red-800 rounded-r px-4">Join</button>
+    </form>
+
+  </div>
+
+  <!--   right -->
+  <div class="flex items-center">
+    Copyright &copy; Foodie 2020 - Rafi
+  </div>
+</div>
 
 </body>
 </html>
